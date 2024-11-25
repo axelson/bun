@@ -21,8 +21,6 @@ defmodule Mix.Tasks.Bun.Install do
   @shortdoc "Installs bun under _build"
   use Mix.Task
 
-  @requirements ["app.config"]
-
   @impl true
   def run(args) do
     valid_options = [runtime_config: :boolean, if_missing: :boolean]
